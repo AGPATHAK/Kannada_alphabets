@@ -266,7 +266,8 @@ const LETTERS = [
 {kn:"ಸ",dev:"स",group:"sibilant"},
 {kn:"ಹ",dev:"ह",group:"aspirate"},
 {kn:"ಳ",dev:"ळ",group:"liquid"},
-{kn:"ಕ್ಷ",dev:"क्ष",group:"consonant"}
+{kn:"ಕ್ಷ",dev:"क्ष",group:"consonant"},
+{kn:"ಜ್ಞ",dev:"ज्ञ",group:"consonant"}
 ];
 
 const STORAGE_KEY="kannada_alphabet_progress_v1";
@@ -648,6 +649,22 @@ document.getElementById("resetLetterStatsBtn").onclick=()=>{
     renderStats();
   }
 };
+
+/* ================= KEYBOARD SHORTCUTS ================= */
+
+window.addEventListener("keydown", (e) => {
+  if (document.getElementById("play").classList.contains("active")) {
+    const key = e.key;
+    if (key >= "1" && key <= "4") {
+      const index = parseInt(key) - 1;
+      const buttons = document.querySelectorAll("#options button");
+      if (buttons[index] && !buttons[index].disabled) {
+        buttons[index].click();
+      }
+    }
+  }
+});
+
 renderDashboard();
 
 </script>

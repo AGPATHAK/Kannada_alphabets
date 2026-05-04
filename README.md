@@ -2,9 +2,30 @@
 
 A browser-based PWA for learning to recognise the Kannada alphabet, with Devanagari as the answer script. Built for personal practice toward reading fluency — newspapers, simple stories — rather than academic study.
 
+## Table of Contents
+
+- [Live App](#live-app)
+- [Screenshots](#screenshots)
+- [What it Covers](#what-it-covers)
+- [Practice Modes](#practice-modes)
+- [Features](#features)
+- [Files](#files)
+- [Deploy on GitHub Pages](#deploy-on-github-pages)
+- [Local Use](#local-use)
+- [Tech](#tech)
+- [Companion App](#companion-app)
+
 ## Live app
 
-https://agpathak.github.io/Kannada_alphabet
+[https://agpathak.github.io/Kannada_alphabet](https://agpathak.github.io/Kannada_alphabet)
+
+## Screenshots
+
+<div align="center">
+  <img src="screenshots/home.png" width="30%" alt="Home Screen">
+  <img src="screenshots/settings.png" width="30%" alt="Settings Screen">
+  <img src="screenshots/play.png" width="30%" alt="Play Screen">
+</div>
 
 ## What it covers
 
@@ -25,29 +46,31 @@ Sessions are configurable: choose card count (5 / 10 / 20 / full set) and a coun
 
 ## Features
 
-- Per-letter accuracy tracking persisted in `localStorage`
-- Session history with scores and streaks
-- Wrong-letter review at end of each session with retry option
-- Keyboard shortcuts: `1` `2` `3` `4` to answer
-- Installable as a PWA on iOS and Android
-- No server, no backend, no build step — one HTML file
+- **Progress Tracking:** Per-letter accuracy tracking persisted in `localStorage`.
+- **Session History:** Track your scores and streaks over time.
+- **Review System:** Wrong-letter review at the end of each session with a retry option.
+- **Keyboard Shortcuts:** Use `1`, `2`, `3`, `4` on your keyboard to answer quickly.
+- **PWA Support:** Installable as a Progressive Web App on iOS and Android.
+- **Lightweight:** No server, no backend, no build step — just one HTML file.
 
 ## Files
 
-- `index.html` — the entire app; all letter data is embedded
-- `manifest.json` — PWA metadata
-- `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` — app icons
+- `index.html` — The entire app; all letter data and logic is embedded.
+- `manifest.json` — PWA metadata.
+- `screenshots/` — App screenshots for documentation.
+- `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` — App icons.
 
 ## Deploy on GitHub Pages
 
-1. Create a new GitHub repository
-2. Upload all files to the repository root
-3. Go to **Settings → Pages**
+1. Create a new GitHub repository.
+2. Upload all files to the repository root.
+3. Go to **Settings → Pages**.
 4. Under **Build and deployment**, set:
    - **Source:** `Deploy from a branch`
    - **Branch:** `main` (or `master`), folder `/ (root)`
-5. Save — GitHub will provide a Pages URL within a minute or two
-6. On iPhone: open the URL in Safari → Share → **Add to Home Screen**
+5. Save — GitHub will provide a Pages URL within a minute or two.
+6. **On iPhone:** Open the URL in Safari → Share → **Add to Home Screen**.
+7. **On Android:** Open the URL in Chrome → Menu → **Install App**.
 
 ## Local use
 
@@ -55,7 +78,10 @@ Open `index.html` directly in any browser — no server needed. Progress is save
 
 ## Tech
 
-Plain HTML, CSS, and JavaScript. Tailwind CSS via CDN for styling, Noto Sans Kannada via Google Fonts for script rendering. Hosted on GitHub Pages.
+- **Plain HTML, CSS, and JavaScript**
+- **Tailwind CSS** (via CDN) for styling
+- **Noto Sans Kannada** (via Google Fonts) for script rendering
+- **Hosted on GitHub Pages**
 
 ## Companion app
 
