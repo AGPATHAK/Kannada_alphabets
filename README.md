@@ -17,7 +17,7 @@ A browser-based PWA for learning to recognise the Kannada alphabet, with Devanag
 
 ## Live app
 
-[https://agpathak.github.io/Kannada_alphabet](https://agpathak.github.io/Kannada_alphabet)
+[[https://agpathak.github.io/Kannada_alphabet](https://agpathak.github.io/Kannada_alphabet)](https://agpathak.github.io/Kannada_alphabets/)
 
 ## Screenshots
 
